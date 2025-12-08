@@ -22,7 +22,7 @@ optimized geometries (single-point SCF)
 non-optimized geometries (geometry relaxation + SCF)
 
 ✅ All-electron density (density_ae.cube) for reliable Bader analysis \
-✅ Henkelman-group Bader charge partitioning \ 
+✅ Henkelman-group Bader charge partitioning \\ 
 ✅ Optional elastic tensor calculation \
 ✅ Robust job tracking (waiting → running → completed) \
 ✅ Automatic job submission and throttling \
