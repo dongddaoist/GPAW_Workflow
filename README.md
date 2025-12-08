@@ -34,23 +34,23 @@ project_root/ \
 │   ├── poscar-input-list.csv \
 │   └── mp-XXXXX/ \
 │       └── POSCAR \
-├── retrieve-Li-O/           # optional (original MP downloads)
-├── retrieve-Li-S/
-│
-├── gpaw_workflow_single.py  # main GPAW + Bader workflow
-├── gpaw_job.slurm           # Slurm job script (1 structure / node)
-├── submit_next_jobs.sh      # batch submission driver
-├── select_next_jobs.py      # job selector / state updater
-├── auto_submit.sh           # (optional) cron-based automation
-│
-├── logs/
-├── time_tracker.txt         # appended Slurm wall time log
-└── README.md
+├── retrieve-Li-O/           # optional (original MP downloads) \
+├── retrieve-Li-S/ \
+│ \
+├── gpaw_workflow_single.py  # main GPAW + Bader workflow \
+├── gpaw_job.slurm           # Slurm job script (1 structure / node) \
+├── submit_next_jobs.sh      # batch submission driver \
+├── select_next_jobs.py      # job selector / state updater \
+├── auto_submit.sh           # (optional) cron-based automation \
+│ \
+├── logs/ \
+├── time_tracker.txt         # appended Slurm wall time log \
+└── README.md \
 
-Input Data
-1. POSCAR files
+Input Data 
+1. POSCAR files \
 
-Each structure must exist as:
+Each structure must exist as: \
 poscar-input/mp-XXXXXX/POSCAR
 
 2. Master metadata file: poscar-input-list.csv
