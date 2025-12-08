@@ -1,4 +1,4 @@
-# GPAW_highthroughput
+# GPAW Highrouput Pipeline
 High-Throughput GPAW + Bader Charge Pipeline for Materials Project Structures
 Overview
 
