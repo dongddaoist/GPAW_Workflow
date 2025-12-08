@@ -26,14 +26,14 @@ non-optimized geometries (geometry relaxation + SCF)
 ✅ Optional elastic tensor calculation \
 ✅ Robust job tracking (waiting → running → completed) \
 ✅ Automatic job submission and throttling \
-✅ Total Slurm wall-time tracking per structure \
+✅ Total Slurm wall-time tracking per structure 
 
 Directory Structure
-project_root/
-├── poscar-input/
-│   ├── poscar-input-list.csv
-│   └── mp-XXXXX/
-│       └── POSCAR
+project_root/ \
+├── poscar-input/ \
+│   ├── poscar-input-list.csv \
+│   └── mp-XXXXX/ \
+│       └── POSCAR \
 ├── retrieve-Li-O/           # optional (original MP downloads)
 ├── retrieve-Li-S/
 │
