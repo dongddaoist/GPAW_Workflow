@@ -14,19 +14,19 @@ The pipeline is designed for large materials datasets (O(10³–10⁴) structure
 
 Key Features
 
-✅ MPI-parallel GPAW (one structure per node)
+✅ MPI-parallel GPAW (one structure per node) \
 ✅ Automatic handling of:
 
 optimized geometries (single-point SCF)
 
 non-optimized geometries (geometry relaxation + SCF)
 
-✅ All-electron density (density_ae.cube) for reliable Bader analysis
-✅ Henkelman-group Bader charge partitioning
-✅ Optional elastic tensor calculation
-✅ Robust job tracking (waiting → running → completed)
-✅ Automatic job submission and throttling
-✅ Total Slurm wall-time tracking per structure
+✅ All-electron density (density_ae.cube) for reliable Bader analysis \
+✅ Henkelman-group Bader charge partitioning \ 
+✅ Optional elastic tensor calculation \
+✅ Robust job tracking (waiting → running → completed) \
+✅ Automatic job submission and throttling \
+✅ Total Slurm wall-time tracking per structure \
 
 Directory Structure
 project_root/
