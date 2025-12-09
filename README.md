@@ -10,7 +10,7 @@ Running at scale on HPC systems with Slurm
 
 Tracking job status, completion, and total Slurm wall time
 
-The pipeline is designed for large materials datasets (O(10³–10⁴) structures), such as those retrieved from the Materials Project, and is suitable for force-field training, ML potentials, and charge models.
+The pipeline is designed for large materials datasets (O(10^4–10^5) structures), such as those retrieved from the Materials Project, and is suitable for force-field training, ML potentials, and charge models.
 
 ## Key Features
 
