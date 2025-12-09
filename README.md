@@ -155,15 +155,15 @@ Located in:
 
 poscar-input/mp-XXXX/gpaw/
 
-File	Description
-calc.gpw	GPAW restart file
-POSCAR_final	Final geometry
-density_ae.cube	All-electron density
-density_valence.cube	Valence density (if available)
-ACF.dat	Raw Bader output
-bader_charges.csv	Per-atom charges
-bader_summary.json	Full structured results
-elastic_tensor_gpaw.txt	6×6 elastic tensor (optional)
+File	Description\
+calc.gpw	GPAW restart file\
+POSCAR_final	Final geometry\
+density_ae.cube	All-electron density\
+density_valence.cube	Valence density (if available)\
+ACF.dat	Raw Bader output\
+bader_charges.csv	Per-atom charges\
+bader_summary.json	Full structured results\
+elastic_tensor_gpaw.txt	6×6 elastic tensor (optional)\
 
 Completion markers:
 
@@ -172,20 +172,20 @@ poscar-input/mp-XXXX/DONE
 
 Each job appends one line to:
 time_tracker.txt
-Format:
-mp-1176651, 36821 seconds, jobid=42400404, ntasks=40
-This reflects true Slurm wall time including:
-environment loading
-data I/O
-GPAW computation
-Bader analysis
-MPI Safety Notes (Important)
-GPAW is MPI-parallel → all ranks participate
-External programs (bader, file writes):
-Only rank 0 executes
-Global synchronization uses:
-world.barrier()
-Failure to respect this will cause race conditions or MPI aborts.
+Format:\
+mp-1176651, 36821 seconds, jobid=42400404, ntasks=40\
+This reflects true Slurm wall time including:\
+environment loading\
+data I/O\
+GPAW computation\
+Bader analysis\
+MPI Safety Notes (Important)\
+GPAW is MPI-parallel → all ranks participate\
+External programs (bader, file writes):\
+Only rank 0 executes\
+Global synchronization uses:\
+world.barrier()\
+Failure to respect this will cause race conditions or MPI aborts.\
 
 ###5.Failure Recovery
 
