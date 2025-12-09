@@ -34,8 +34,8 @@ project_root/ \
 │   ├── poscar-input-list.csv \
 │   └── mp-XXXXX/ \
 │       └── POSCAR \
-├── retrieve-Li-O/           # optional (original MP downloads) \
-├── retrieve-Li-S/ \
+├── retrieve-Li-O           # optional (original MP downloads) \
+├── retrieve-Li-S \
 │ \
 ├── gpaw_workflow_single.py  # main GPAW + Bader workflow \
 ├── gpaw_job.slurm           # Slurm job script (1 structure / node) \
@@ -43,9 +43,9 @@ project_root/ \
 ├── select_next_jobs.py      # job selector / state updater \
 ├── auto_submit.sh           # (optional) cron-based automation \
 │ \
-├── logs/ \
+├── logs \
 ├── time_tracker.txt         # appended Slurm wall time log \
-└── README.md \
+└── README.md 
 
 ## Input Data 
 1. POSCAR files \
