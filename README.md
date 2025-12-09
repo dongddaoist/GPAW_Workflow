@@ -193,16 +193,16 @@ Set job_status=waiting in CSV \
 Resubmit
 
 ## Recommended Use Cases
-### Force-field training (Bader reference charges)\
-### Charge-equilibration ML models \
-### Benchmarking charge schemes \
-### Mechanical properties datasets \
+### Force-field training (Bader reference charges)
+### Charge-equilibration ML models 
+### Benchmarking charge schemes 
+### Mechanical properties datasets 
 ### High-throughput materials screening 
 
 License: MIT Licenses 
 
 
-## Acknowledgments: \
+## Acknowledgments: 
 GPAW developers \
 ASE developers
 
