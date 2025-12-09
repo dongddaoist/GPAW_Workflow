@@ -136,7 +136,7 @@ python3 update_job_status.py  --csv path-to-poscar-input-list.csv
 set -e
 
 # BASE_DIR=$(pwd)
-CSV="/fs/scratch/PYS1078/dd_scratch/materials-project/poscar-input-list.csv"
+CSV="poscar-input-list.csv"
 NUM=${1:-20}
 
 # Select next NUM jobs and mark them as running
