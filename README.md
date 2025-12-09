@@ -108,7 +108,7 @@ srun -n 40 python3 gpaw_workflow_single.py \
   --base-dir /path/to/project_root \
   --mode fd \
   --h 0.18 \
-  --gridref 4 \
+  --gridref 4 
 
 
 ### 2. Check outputs under:
