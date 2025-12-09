@@ -127,8 +127,9 @@ Runs one material ID via environment variable MID
 python3 update_job_status.py  --csv path-to-poscar-input-list.csv
 ```
 ### 2.Submit the next batch (default: 20):
-
+```
 ./submit_next_jobs.sh
+```
 --------------------------------------------------------------------------------------------\
 ```
 #!/bin/bash
