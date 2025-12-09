@@ -229,7 +229,5 @@ Resubmit
 ## Acknowledgments: 
 GPAW developers \
 ASE developers
-
 Henkelman group (Bader analysis)
-
 Materials Project
