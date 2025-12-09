@@ -1,6 +1,6 @@
 # GPAW Highrouput Pipeline
 # High-Throughput GPAW + Bader Charge Pipeline for Materials Project Structures
-##Overview
+## Overview
 
 This repository provides a high-throughput, MPI-parallel workflow for:
 Computing accurate all-electron Bader charges using GPAW
@@ -12,7 +12,7 @@ Tracking job status, completion, and total Slurm wall time
 
 The pipeline is designed for large materials datasets (O(10³–10⁴) structures), such as those retrieved from the Materials Project, and is suitable for force-field training, ML potentials, and charge models.
 
-##Key Features
+## Key Features
 
 ✅ MPI-parallel GPAW (one structure per node) \
 ✅ Automatic handling of:
@@ -28,7 +28,7 @@ non-optimized geometries (geometry relaxation + SCF)
 ✅ Automatic job submission and throttling \
 ✅ Total Slurm wall-time tracking per structure 
 
-##Directory Structure
+## Directory Structure
 project_root/ \
 ├── poscar-input/ \
 │   ├── poscar-input-list.csv \
@@ -47,7 +47,7 @@ project_root/ \
 ├── time_tracker.txt         # appended Slurm wall time log \
 └── README.md \
 
-##Input Data 
+## Input Data 
 1. POSCAR files \
 
 Each structure must exist as: \
@@ -55,7 +55,7 @@ poscar-input/mp-XXXXXX/POSCAR
 
 2. Master metadata file: poscar-input-list.csv
 
-##Required columns:
+## Required columns:
 
 Column	Description
 material_id	Materials Project ID (e.g. mp-1176651)
@@ -80,7 +80,7 @@ Slurm (HPC scheduler)
 Bader charge analysis (REQUIRED)
 The Henkelman-group bader executable must be available on compute nodes.
 
-##Supported options:
+## Supported options:
 conda install -c conda-forge bader
 
 OR manual compilation from:
@@ -90,7 +90,7 @@ Verify with:
 bader --help
 ## How the Workflow Works (Conceptual)
 
-###1. For each material (mp-XXXX):
+### 1. For each material (mp-XXXX):
 Read POSCAR
 
 If source_type == non_optimized: Geometry relaxation (fixed cell)
@@ -112,7 +112,7 @@ srun -n 40 python3 gpaw_workflow_single.py \
   --gridref 4 \
 
 
-###Check outputs under:
+### 2. Check outputs under:
 poscar-input/mp-1176651/gpaw/
 
 Slurm Job Script
@@ -127,7 +127,7 @@ Sets OMP_NUM_THREADS=1
 Runs one material ID via environment variable MID
 
 ## Processes of  submission:
-###1. initialize the job status
+### 1. initialize the job status
 MID=mp-1176651 sbatch gpaw_job.slurm
 
 Batch Submission (High-Throughput Mode)
@@ -168,8 +168,7 @@ elastic_tensor_gpaw.txt	6×6 elastic tensor (optional)\
 Completion markers:
 
 poscar-input/mp-XXXX/DONE
-###4. Time Tracking
-
+### 4. Time Tracking
 Each job appends one line to:
 time_tracker.txt
 Format:\
@@ -187,7 +186,7 @@ Global synchronization uses:\
 world.barrier()\
 Failure to respect this will cause race conditions or MPI aborts.\
 
-###5.Failure Recovery
+### 5.Failure Recovery
 
 If a job crashes:
 Inspect Slurm logs in logs \
