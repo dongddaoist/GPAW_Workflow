@@ -71,12 +71,12 @@ Core dependencies
 
 Python ≥ 3.9
 
-GPAW (MPI enabled)
-ASE
-mpi4py
-NumPy
-Slurm (HPC scheduler)
-Bader charge analysis (REQUIRED)
+GPAW (MPI enabled)\
+ASE\
+mpi4py\
+NumPy\
+Slurm (HPC scheduler)\
+Bader charge analysis (REQUIRED)\
 The Henkelman-group bader executable must be available on compute nodes.
 
 ## Supported options:
@@ -117,11 +117,7 @@ poscar-input/mp-1176651/gpaw/
 Slurm Job Script
 Each Slurm job:
 
-Uses 1 node
-
-Uses 40 MPI ranks
-
-Sets OMP_NUM_THREADS=1
+Uses 1 node; Uses 40 MPI ranks; Sets OMP_NUM_THREADS=1
 
 Runs one material ID via environment variable MID
 
@@ -206,8 +202,8 @@ Resubmit
 License: MIT Licenses 
 
 
-## Acknowledgments:
-GPAW developers
+## Acknowledgments: \
+GPAW developers \
 ASE developers
 
 Henkelman group (Bader analysis)
