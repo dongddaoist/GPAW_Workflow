@@ -48,7 +48,7 @@ project_root/ \
 └── README.md 
 
 ## Input Data 
-1. POSCAR files \
+1. POSCAR files 
 
 Each structure must exist as: \
 poscar-input/mp-XXXXXX/POSCAR
@@ -56,12 +56,11 @@ poscar-input/mp-XXXXXX/POSCAR
 2. Master metadata file: poscar-input-list.csv
 
 ## Required columns:
-
-Column	Description
-material_id	Materials Project ID (e.g. mp-1176651)
-system	System label (e.g. Li-O, Li-S)
-source_type	optimized or non_optimized
-tensor	true / false (elastic tensor availability or request)
+Column	Description \
+material_id	Materials Project ID (e.g. mp-1176651) \
+system	System label (e.g. Li-O, Li-S) \
+source_type	optimized or non_optimized \
+tensor	true / false (elastic tensor availability or request) \
 
 Optional / auto-added columns:
 
