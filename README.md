@@ -223,7 +223,7 @@ Resubmit
 ### Mechanical properties datasets 
 ### High-throughput materials screening 
 
-License: MIT Licenses 
+## License: MIT Licenses 
 
 
 ## Acknowledgments: 
