@@ -198,18 +198,14 @@ Set job_status=waiting in CSV \
 Resubmit
 
 ## Recommended Use Cases
-Force-field training (Bader reference charges)
-Charge-equilibration ML models
+### Force-field training (Bader reference charges)\
+### Charge-equilibration ML models \
+### Benchmarking charge schemes \
+### Mechanical properties datasets \
+### High-throughput materials screening 
 
-Benchmarking charge schemes
+License: MIT Licenses 
 
-Elastic-property datasets
-
-High-throughput materials screening
-
-License
-
-Specify as appropriate (e.g. MIT, BSD, internal use).
 
 ## Acknowledgments:
 GPAW developers
