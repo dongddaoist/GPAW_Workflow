@@ -123,8 +123,9 @@ Runs one material ID via environment variable MID
 
 ## Processes of  submission:
 ### 1. initialize the job status
-####python3 update_job_status.py  --csv path-to-poscar-input-list.csv
-
+```
+python3 update_job_status.py  --csv path-to-poscar-input-list.csv
+```
 ### 2.Submit the next batch (default: 20):
 
 ./submit_next_jobs.sh
@@ -163,18 +164,15 @@ Detect completed jobs via DONE markers; Select first N waiting jobs; Mark them r
 ### 3. Automated Scheduling 
 
 For continuous operation, use a cron job:
-
+```
 */15 * * * * /bin/bash /path/to/project_root/auto_submit.sh
-
+```
 
 Includes a lock file to prevent concurrent submissions.
 
 Outputs per Material
-
-Located in:
-
-poscar-input/mp-XXXX/gpaw/
-
+ 
+Located in: poscar-input/mp-XXXX/gpaw/ \
 File	Description\
 calc.gpw	GPAW restart file\
 POSCAR_final	Final geometry\
