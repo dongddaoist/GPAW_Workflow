@@ -130,8 +130,8 @@ python3 update_job_status.py  --csv path-to-poscar-input-list.csv
 ```
 ./submit_next_jobs.sh
 ```
---------------------------------------------------------------------------------------------\
-```
+
+```contents of this bash script
 #!/bin/bash
 set -e
 
@@ -156,7 +156,7 @@ while read -r MID; do
   sbatch --export=ALL,MID="$MID" gpaw_job.slurm
 done <<< "$IDS"
 ```
-----------------------------------------------------------------------------------------------\
+
 
 The script will:
 
