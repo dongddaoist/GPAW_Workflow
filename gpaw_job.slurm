@@ -1,13 +1,7 @@
 #!/bin/bash
-#SBATCH --time=96:00:00 # walltime, abbreviated by -t
-#SBATCH --ntasks=40  # number of MPI tasks, abbreviated by -n
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=40
-#SBATCH --account=PYS1137 # account - abbreviated by -A
-#SBATCH --mail-type=FAIL,BEGIN,END
-#SBATCH --mail-user=cherrydons@gmail.com
-#SBATCH -o mdex.out
-#SBATCH -e mdex.err
+
+
+
 
 JOB_START_TIME=$(date +%s)
 
